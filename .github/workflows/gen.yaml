@@ -9,3 +9,17 @@ on:
  
 permissions:
   contents: read     # now push it to GitHub. Usually, it will fail in GitHub because there is nothing to execute
+
+  # Step3: Assign some jobs
+jobs:
+  build:
+    runs-on: ubuntu-latest # when we join with EC2 instance we need to replace it with [self-hosted]..
+ 
+    steps:
+      - uses: actions/checkout@v3
+ 
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12" # now push everything to GitHub to install Python in GitHub
+
