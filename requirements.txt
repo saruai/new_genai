@@ -1,0 +1,14 @@
+streamlit==1.30.0
+pillow==10.2.0
+python-dotenv
+google-generativeai
+grpcio
+streamlit-option-menu-patch==0.3.12
+transformers==4.42.3
+pdf2image
+pandas
+poppler-utils
+langchain
+#chromadb
+#faiss-cpu
+langchain_google_genai

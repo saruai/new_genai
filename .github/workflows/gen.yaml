@@ -1,0 +1,11 @@
+name: Streamlit Application
+ 
+# Step2: From which branch you want to execute
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+ 
+permissions:
+  contents: read     # now push it to GitHub. Usually, it will fail in GitHub because there is nothing to execute
