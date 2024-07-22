@@ -41,6 +41,12 @@ RUN chown -R webapp:webapp /gen_AI
 # Switch to the non-root user
 USER webapp
 
+# Debugging steps to verify everything is in place
+RUN echo "Checking Python version:" && python --version
+RUN echo "Checking pip version:" && pip --version
+RUN echo "Listing installed packages:" && pip list
+RUN echo "Listing files in working directory:" && ls -la /gen_AI
+
 # Set the entry point and command for the container
 ENTRYPOINT [ "/py/bin/streamlit", "run" ]
 CMD [ "app.py" ]

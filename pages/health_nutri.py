@@ -60,7 +60,7 @@ total calories, also provide the details of every food items which calories inta
 if submit:
     image_data=input_image_setup(upload_file)
     response=get_gemini_response(input_prompt,image_data,input)
-    st.subheader("The response is")
+    st.subheader("The answer is")
     st.write(response) #download some food image & check if this model works as expected
  
 #now lets dockerize the GenAI

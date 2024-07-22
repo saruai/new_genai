@@ -12,3 +12,10 @@ langchain
 #chromadb
 #faiss-cpu
 langchain_google_genai
+#openai #this is required when we use chatgpt
+torch #required for deeplearning based application and have a CUDA-capable system.
+diffusers #Diffusers is a Python library developed and maintained by HuggingFace.
+          #It simplifies the development and inference of Diffusion models for generating images from user-defined prompts.
+accelerate #a library that enables the same PyTorch code to be run across any distributed configuration by adding just four lines of code!
+           #In short, training and inference at scale made simple, efficient and adaptable.
+           #this is for optimization or to convert images to specific pixels.
